@@ -10,7 +10,6 @@ namespace MyBanker
     internal class Mastercard : Cards, ICredit, IExpiration_Date
     {
 
-
         public string? NAME
         {
             get { return Name; }
@@ -83,7 +82,7 @@ namespace MyBanker
             DateTime now = DateTime.Now;
             DateTime ExpirationDate = now.AddYears(5);
 
-            // placing a x where i want the return string to be split to a new write line so i looks nice.
+            // placing a * where i want the return string to be split to a new write line so i looks nice.
             CardInfo = string.Concat("Mastercard *Name : ", Name, "*Card number : ", CardNumber, "*Acount number : ", AcountNumber, "*Expiration Date : ", ExpirationDate, "*Total credit : ", Credit_Month, "*Monthly withdraw limit : 30000 *Daily Widraw limit : 5000");
             return CardInfo;
         }

@@ -78,7 +78,7 @@ namespace MyBanker
                 AcountNumber = GenerateAcountNumber();
                 CardNumber = GenerateCardNumber();
 
-                // placing a p where i want the return string to be split to a new write line so i looks nice.
+                // placing a * where i want the return string to be split to a new write line so i looks nice.
                 CardInfo = string.Concat("Debit card *Name : ", Name, "*Card number : ", CardNumber, "*Acount number : ", AcountNumber, "*This car has no credit all money spend i withdraw right away.");
             }
             else { CardInfo = "You are to old you should be under 18."; }

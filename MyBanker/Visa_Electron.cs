@@ -87,7 +87,7 @@ namespace MyBanker
                 DateTime now = DateTime.Now;
                 DateTime ExpirationDate = now.AddYears(5);
 
-                // placing a x where i want the return string to be split to a new write line so i looks nice.
+                // placing a * where i want the return string to be split to a new write line so i looks nice.
                 CardInfo = string.Concat("Visa Electron *Name : ", Name, "*Card number : ", CardNumber, "*Acount number : ", AcountNumber, "*Expiration Date : ", ExpirationDate, "*Max amount to spend is 10000 a month.");
             }
             else { CardInfo = "You are to young come back when your 15."; }
